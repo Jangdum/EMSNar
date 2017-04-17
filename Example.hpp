@@ -11,4 +11,10 @@
 
 #include <stdio.h>
 
+class Example
+{
+public:
+    Example();
+};
+
 #endif /* Example_hpp */
