@@ -11,4 +11,10 @@
 
 #include <stdio.h>
 
+class EssayFormat
+{
+public:
+    EssayFormat();
+};
+
 #endif /* EssayFormat_hpp */

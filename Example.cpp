@@ -9,8 +9,6 @@
 #include "Example.hpp"
 #include <iostream>
 
-wchar_t bullet = L'U+2022';
-
 using namespace std;
 
 void ExampleNarritive();
@@ -39,38 +37,38 @@ void ExampleNarritive()
     cout << endl;
     
     
-    cout << "- What kind of location is it: ";
+    cout << "- What kind of location is it: \n";
     cout << " U+2022 You would put the type of location the "
-                       <<  "call was at");
+                       <<  "call was at\n";
     cout << endl;
-    cout << "   (Example)");
-    cout << "  -What kind of location is it: residental";
+    cout << "   (Example)\n";
+    cout << "  -What kind of location is it: residental\n";
     cout << "------------------------------"
-                     <<  "--------------------------";
+                     <<  "--------------------------\n\n";
     
     cout << endl;
     
-    cout << "- What kind of call was it dispached as: ";
-    cout << "  U+2022 You would put the type of call it was";
+    cout << "- What kind of call was it dispached as: \n";
+    cout << "  U+2022 You would put the type of call it was\n";
     cout << endl;
-    cout << " (Eample)");
+    cout << " (Eample)\n";
     cout << "- What kind of call was it dispached as: "
-                       <<  "injured person";
+                       <<  "injured person\n";
     cout << "------------------------------------"
-                     <<  "--------------------";
+                     <<  "--------------------\n\n";
     
     cout << endl;
     
-    cout << "- Was ALS called? (y)es (n)o: ";
+    cout << "- Was ALS called? (y)es (n)o: \n";
     cout << " U+2022 Ok you can't possibly fuck this "
                        <<  "up but just incase,";
-    cout << "  I'll show you";
+    cout << "  I'll show you\n";
     cout << endl;
-    cout << " (Example)");
-    cout << "- Was ALS called? (y)es (n)o: y";
+    cout << " (Example)\n";
+    cout << "- Was ALS called? (y)es (n)o: y\n";
     cout << " U+2022 If you say yes too this an "
                        <<  "extra question "
-                       <<  "will appear";
+                       <<  "will appear\n";
     cout << endl;
     cout << "   (Example)";
     cout << " - what ALS number: 2";
@@ -78,32 +76,32 @@ void ExampleNarritive()
                        <<  " appear";
     cout << "  ....amazing right?";
     cout << "------------------------------------"
-                       <<  "--------------------";
+                       <<  "--------------------\n\n";
     
     cout << endl;
     
-    cout << "       ---Note Position and Type of room---";
-    cout << "- Where was the patient found within the location: ";
-    cout << " U+2022 Follow the top do what it"
-                       <<  " says and you'll be fine";
-    cout << endl;
-    cout << "   (Example)";
-    cout << "       ---Note Position and Type of room---";
-    cout << "- Where was the patient found within the location: laying on bed in bedroom";
-    cout << "------------------------------------"
-                       <<  "--------------------";
-    
-    cout << endl;
-    
-    cout << "          		 ---ex. AMS, Crying, unconcious---";
-    cout << "- What was the patient status when you got there: ";
-    cout << "U+2022 Ok don't over think this. Look at the top";
+    cout << "       ---Note Position and Type of room---\n";
+    cout << "- Where was the patient found within the location: \n";
+    cout << " U+2022 Follow the top do what it\n"
+                       <<  " says and you'll be fine\n";
     cout << endl;
     cout << "   (Example)";
-    cout << "          ---ex. AMS, Crying, unconscious---";
-    cout << "- What was the patient status when you got there: unconcious");
+    cout << "       ---Note Position and Type of room---\n";
+    cout << "- Where was the patient found within the location: laying on bed in bedroom\n";
+    cout << "-----------------------------------"
+                       <<  "--------------------\n\n";
+    
+    cout << endl;
+    
+    cout << "          		 ---ex. AMS, Crying, unconcious---\n";
+    cout << "- What was the patient status when you got there: \n";
+    cout << "U+2022 Ok don't over think this. Look at the top\n";
+    cout << endl;
+    cout << "   (Example)\n";
+    cout << "          ---ex. AMS, Crying, unconscious---\n";
+    cout << "- What was the patient status when you got there: unconcious\n";
     cout << "------------------------------------"
-                       <<  "--------------------";
+                       <<  "--------------------\n";
     
     cout << endl;
     
@@ -114,8 +112,8 @@ void ExampleNarritive()
     cout << endl;
     cout << "   (Example)";
     cout << "- What was the patient mental staus: Lethargy";
-    cout << "------------------------------------"
-                       <<  "--------------------");
+    cout << "------------------------------------\n"
+                       <<  "--------------------\n";
     
     cout << endl;
     
@@ -127,8 +125,8 @@ void ExampleNarritive()
     cout << "   (Example)";
     cout << "- What does the patient say is wrong with them?";
     cout << "  Any pertinent negatives?: light headed and a broken bone";
-    cout << "------------------------------------"
-                       <<  "--------------------";
+    cout << "------------------------------------\n"
+                       <<  "--------------------\n";
     
     
     cout << endl;
@@ -142,32 +140,32 @@ void ExampleNarritive()
     cout << "   (Example)";
     cout << "- Was Oxygen Used (y)es or (n)o: y";
     cout << "- What liters where they put on: 6";
-    cout << ("------------------------------------"
-                       <<  "--------------------";
+    cout << ("------------------------------------\n"
+                       <<  "--------------------\n";
     
     cout << endl;
     
-    cout << "   			---Stretcher, Reeves, Backboard Ambulance---";
+    cout << "   			---Stretcher, Reeves, Backboard Ambulance---\n";
     cout << "- Where was the patient transferred to: ";
     cout << "U+2022 You just put the top";
     cout << "   (Example)";
     cout << endl;
-    cout << "   			---Stretcher, Reeves, Backboard Ambulance---";
+    cout << "   			---Stretcher, Reeves, Backboard Ambulance---\n";
     cout << "- Where was the patient transferred too: backboard";
-    cout << "------------------------------------"
-                       <<  "--------------------";
+    cout << "------------------------------------\n"
+                       <<  "--------------------\n";
     
     cout << endl;
     
-    cout << "   ---Backboard, stretcher, driver seat, bench seat, captins chair, car seat---";
+    cout << "   ---Backboard, stretcher, driver seat, bench seat, captins chair, car seat---\n";
     cout << "- What was the patient secured to: ";
     cout << "U+2022 You just put the top";
     cout << "   (Example)";
     cout << endl;
-    cout << "   ---Backboard, stretcher, driver seat, bench seat, captins chair, car seat---";
+    cout << "   ---Backboard, stretcher, driver seat, bench seat, captins chair, car seat---\n";
     cout << "- What was the patient secured to: stretcher";
-    cout << "------------------------------------"
-                       <<  "--------------------";
+    cout << "------------------------------------\n"
+                       <<  "--------------------\n";
     
     cout << endl;
     
@@ -176,38 +174,38 @@ void ExampleNarritive()
     cout << "U+2022 if answered yes then you would go to the next question";
     cout << "U+2022 if answered no then it would ask";
     cout << endl;
-    cout << "    	 ---ALS, combative, refusal(start with becuase)---";
+    cout << "    	 ---ALS, combative, refusal(start with becuase)---\n";
     cout << "- explain why: ";
     cout << "   (Example)";
     cout << endl;
-    cout << "    	 ---ALS, combative, refusal(start with becuase)---";
+    cout << "    	 ---ALS, combative, refusal(start with becuase)---\n";
     cout << "- explain why: combative because pt was hurting really bad";
-    cout << "------------------------------------"
-                       <<  "--------------------";
+    cout << "------------------------------------\n"
+                       <<  "--------------------\n";
     
     cout << endl;
     
-    cout << "   		 ---Better, worse, same and why if known---";
+    cout << "   		 ---Better, worse, same and why if known---\n";
     cout << "- note PT condition in Ambulance: ";
     cout << "U+2022 follow the top";
     cout << "   (Example)";
     cout << endl;
-    cout << "   		 ---Better, worse, same and why if known---";
+    cout << "   		 ---Better, worse, same and why if known---\n";
     cout << "- note PT condition in Ambulance: Better because pain was easing";
-    cout << "------------------------------------"
-                       <<  "--------------------";
+    cout << "------------------------------------\n"
+                       <<  "--------------------\n";
     
     cout << endl;
     
-    cout << "   		 ---Streacher, walked, wheel chair ETC---";
+    cout << "   		 ---Streacher, walked, wheel chair ETC---\n";
     cout << "- note how the PT was brought inside the ER from the Ambulace: ";
     cout << "U+2022 follow the top";
     cout << "   (Example)";
     cout << endl;
-    cout << "   		 ---Streacher, walked, wheel chair ETC---";
+    cout << "   		 ---Streacher, walked, wheel chair ETC---\n";
     cout << "- note how the PT was brought inside the ER from the Ambulace: walked";
-    cout << "------------------------------------"
-                       <<  "--------------------";
+    cout << "------------------------------------\n"
+                       <<  "--------------------\n";
     
     cout << endl;
     
@@ -218,8 +216,8 @@ void ExampleNarritive()
     cout << endl;
     cout << "- note the department, secition, area the PT was brought once inside";
     cout << "  the ER: some er departement";
-    cout << "------------------------------------"
-                       <<  "--------------------";
+    cout << "------------------------------------\n"
+                       <<  "--------------------\n";
     
     cout << endl;
     
@@ -230,6 +228,6 @@ void ExampleNarritive()
     cout << endl;
     cout << "     		  ---Slide, Lift, Walked--";
     cout << "- note how the PT was moved to the bed in the ER: lifted";
-    cout << "------------------------------------"
-                       <<  "--------------------";
+    cout << "------------------------------------\n"
+                       <<  "--------------------\n";
 }
