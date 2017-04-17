@@ -43,8 +43,7 @@ void ExampleNarritive()
     cout << endl;
     cout << "   (Example)\n";
     cout << "  -What kind of location is it: residental\n";
-    cout << "------------------------------"
-                     <<  "--------------------------\n\n";
+    cout << "------------------------------";
     
     cout << endl;
     
@@ -112,122 +111,120 @@ void ExampleNarritive()
     cout << endl;
     cout << "   (Example)";
     cout << "- What was the patient mental staus: Lethargy";
-    cout << "------------------------------------\n"
+    cout << "------------------------------------"
+                       <<  "--------------------\n\n";
+    
+    
+    cout << "- What does the patient say is wrong with them?\n";
+    cout << "  Any pertinent negatives?: \n";
+    cout << "U+2022 put down anything you see wrong with them\n";
+    cout << "U+2022 seperating them with an and then put down the negative\n";
+    cout << endl;
+    cout << "   (Example)\n";
+    cout << "- What does the patient say is wrong with them?\n";
+    cout << "  Any pertinent negatives?: light headed and a broken bone\n";
+    cout << "------------------------------------"
                        <<  "--------------------\n";
     
-    cout << endl;
-    
-    cout << "- What does the patient say is wrong with them?";
-    cout << "  Any pertinent negatives?: ";
-    cout << "U+2022 put down anything you see wrong with them";
-    cout << "U+2022 seperating them with an and then put down the negative";
-    cout << endl;
-    cout << "   (Example)";
-    cout << "- What does the patient say is wrong with them?";
-    cout << "  Any pertinent negatives?: light headed and a broken bone";
-    cout << "------------------------------------\n"
-                       <<  "--------------------\n";
-    
     
     cout << endl;
     
-    cout << "- Was Oxygen Used (y)es or (n)o: ";
-    cout << "U+2022 You just put y = yes or n = no";
-    cout << "U+2022 if you say no then it would go to next question";
-    cout << "U+2022 if you say yes then you will be taken to this question";
-    cout << "- What liters where they put on: ";
-    cout << "U+2022 You just put the leters it was set at";
-    cout << "   (Example)";
-    cout << "- Was Oxygen Used (y)es or (n)o: y";
-    cout << "- What liters where they put on: 6";
-    cout << ("------------------------------------\n"
-                       <<  "--------------------\n";
-    
-    cout << endl;
+    cout << "- Was Oxygen Used (y)es or (n)o: \n";
+    cout << "U+2022 You just put y = yes or n = no\n";
+    cout << "U+2022 if you say no then it would go to next question\n";
+    cout << "U+2022 if you say yes then you will be taken to this question\n";
+    cout << "- What liters where they put on: \n";
+    cout << "U+2022 You just put the leters it was set at\n";
+    cout << "   (Example)\n";
+    cout << "- Was Oxygen Used (y)es or (n)o: y\n";
+    cout << "- What liters where they put on: 6\n";
+    cout << "------------------------------------\n";
+             
+             cout << endl;
     
     cout << "   			---Stretcher, Reeves, Backboard Ambulance---\n";
-    cout << "- Where was the patient transferred to: ";
-    cout << "U+2022 You just put the top";
-    cout << "   (Example)";
+    cout << "- Where was the patient transferred to: \n";
+    cout << "U+2022 You just put the top\n";
+    cout << "   (Example)\n";
     cout << endl;
     cout << "   			---Stretcher, Reeves, Backboard Ambulance---\n";
-    cout << "- Where was the patient transferred too: backboard";
-    cout << "------------------------------------\n"
+    cout << "- Where was the patient transferred too: backboard\n";
+    cout << "------------------------------------"
                        <<  "--------------------\n";
     
     cout << endl;
     
     cout << "   ---Backboard, stretcher, driver seat, bench seat, captins chair, car seat---\n";
-    cout << "- What was the patient secured to: ";
-    cout << "U+2022 You just put the top";
-    cout << "   (Example)";
+    cout << "- What was the patient secured to: \n";
+    cout << "U+2022 You just put the top\n";
+    cout << "   (Example)\n";
     cout << endl;
     cout << "   ---Backboard, stretcher, driver seat, bench seat, captins chair, car seat---\n";
-    cout << "- What was the patient secured to: stretcher";
-    cout << "------------------------------------\n"
+    cout << "- What was the patient secured to: stretcher\n";
+    cout << "------------------------------------"
                        <<  "--------------------\n";
     
     cout << endl;
     
-    cout << "- Was PTS vitals taken (y)es or (n)o: ";
-    cout << "U+2022 You just put y = yes or n = no";
-    cout << "U+2022 if answered yes then you would go to the next question";
-    cout << "U+2022 if answered no then it would ask";
+    cout << "- Was PTS vitals taken (y)es or (n)o: \n";
+    cout << "U+2022 You just put y = yes or n = no\n";
+    cout << "U+2022 if answered yes then you would go to the next question\n";
+    cout << "U+2022 if answered no then it would ask\n";
     cout << endl;
     cout << "    	 ---ALS, combative, refusal(start with becuase)---\n";
-    cout << "- explain why: ";
-    cout << "   (Example)";
+    cout << "- explain why: \n";
+    cout << "   (Example)\n";
     cout << endl;
     cout << "    	 ---ALS, combative, refusal(start with becuase)---\n";
-    cout << "- explain why: combative because pt was hurting really bad";
-    cout << "------------------------------------\n"
+    cout << "- explain why: combative because pt was hurting really bad\n";
+    cout << "------------------------------------"
                        <<  "--------------------\n";
     
     cout << endl;
     
     cout << "   		 ---Better, worse, same and why if known---\n";
-    cout << "- note PT condition in Ambulance: ";
+    cout << "- note PT condition in Ambulance: \n";
     cout << "U+2022 follow the top";
-    cout << "   (Example)";
+    cout << "   (Example)\n";
     cout << endl;
     cout << "   		 ---Better, worse, same and why if known---\n";
-    cout << "- note PT condition in Ambulance: Better because pain was easing";
-    cout << "------------------------------------\n"
+    cout << "- note PT condition in Ambulance: Better because pain was easing\n";
+    cout << "------------------------------------"
                        <<  "--------------------\n";
     
     cout << endl;
     
     cout << "   		 ---Streacher, walked, wheel chair ETC---\n";
-    cout << "- note how the PT was brought inside the ER from the Ambulace: ";
-    cout << "U+2022 follow the top";
+    cout << "- note how the PT was brought inside the ER from the Ambulace: \n";
+    cout << "U+2022 follow the top\n";
     cout << "   (Example)";
     cout << endl;
     cout << "   		 ---Streacher, walked, wheel chair ETC---\n";
-    cout << "- note how the PT was brought inside the ER from the Ambulace: walked";
-    cout << "------------------------------------\n"
+    cout << "- note how the PT was brought inside the ER from the Ambulace: walked\n";
+    cout << "------------------------------------"
                        <<  "--------------------\n";
     
     cout << endl;
     
-    cout << "- note the department, secition, area the PT was brought once inside";
+    cout << "- note the department, secition, area the PT was brought once inside\n";
     cout << "  the ER: ";
-    cout << "U+2022 Just the department no explination";
-    cout << "   (Example)";
+    cout << "U+2022 Just the department no explination\n";
+    cout << "   (Example)\n";
     cout << endl;
-    cout << "- note the department, secition, area the PT was brought once inside";
-    cout << "  the ER: some er departement";
-    cout << "------------------------------------\n"
-                       <<  "--------------------\n";
+    cout << "- note the department, secition, area the PT was brought once inside\n";
+    cout << "  the ER: some er departement\n";
+    cout << "------------------------------------"
+                       <<  "--------------------\n\n";
     
     cout << endl;
     
-    cout << "     		  ---Slide, Lift, Walked--";
-    cout << "- note how the PT was moved to the bed in the ER: ";
-    cout << "U+2022 Just one word it and follow the top";
-    cout << "   (Example)";
+    cout << "     		  ---Slide, Lift, Walked--\n";
+    cout << "- note how the PT was moved to the bed in the ER: \n";
+    cout << "U+2022 Just one word it and follow the top\n";
+    cout << "   (Example)\n";
     cout << endl;
-    cout << "     		  ---Slide, Lift, Walked--";
-    cout << "- note how the PT was moved to the bed in the ER: lifted";
-    cout << "------------------------------------\n"
+    cout << "     		  ---Slide, Lift, Walked--\n";
+    cout << "- note how the PT was moved to the bed in the ER: lifted\n";
+    cout << "------------------------------------"
                        <<  "--------------------\n";
 }
