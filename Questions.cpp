@@ -8,6 +8,7 @@
 
 #include "Questions.hpp"
 #include "VariableDataBase.hpp"
+#include "EssayFormat.hpp"
 #include <iostream>
 
 using namespace std;
@@ -219,8 +220,8 @@ void AskQuestions()
         cout << endl;		//give a space between the questions
         
         //question and answer
-        cout << ("          		 ---ex. AMS, Crying, unconscious---");
-        cout << ("- What was the patient status when you got there: ");
+        cout << "          		 ---ex. AMS, Crying, unconscious---\n";
+        cout << "- What was the patient status when you got there: ";
             cin >> strInput;
         
         //set it in the question database
@@ -237,7 +238,7 @@ void AskQuestions()
     if(hasAnswered[6] == true)
     {
         //question and answer
-        cout << ("- What was the patient mental staus: ");
+        cout << "- What was the patient mental staus: ";
             cin >> strInput;
         
         //set it in the question database
@@ -254,8 +255,8 @@ void AskQuestions()
     if(hasAnswered[7] == true)
     {
         //question and answer
-        cout << ("- What does the patient say is wrong with them?");
-        cout << ("  Any pertinent negatives?: ");
+        cout << "- What does the patient say is wrong with them?";
+        cout << "  Any pertinent negatives?: ";
             cin >> strInput;
         
         //set it in the question database
@@ -274,7 +275,7 @@ void AskQuestions()
         while(true)
         {
             //question and answer
-            cout << ("- Was Oxygen Used (y)es or (n)o: ");
+            cout << "- Was Oxygen Used (y)es or (n)o: ";
             cin >> strInput;
             
             if(strInput == "y" || strInput == "Y")
@@ -290,7 +291,7 @@ void AskQuestions()
                     
                     //question and answer
                     cout << "             ---Must Be 0 Or Higher---\n";
-                    cout << ("- What liters where they put on: ");
+                    cout << "- What liters where they put on: ";
                         cin >> intInput;
                     
                     //set it in the question database
@@ -311,7 +312,7 @@ void AskQuestions()
                     while(true)
                     {
                         //question and answer
-                        cout << ("- Was PT Transferred to the room air: (y)es or (n)o: ");
+                        cout << "- Was PT Transferred to the room air: (y)es or (n)o: ";
                         cin >> strInput;
                         
                         //if you answer yes to the question
@@ -349,7 +350,7 @@ void AskQuestions()
                         //if answer is unknown
                         else
                         {
-                            cout << ("   ---Not a (y) or a (n)---");
+                            cout << "   ---Not a (y) or a (n)---\n";
                             cout << endl;
                         }
                     }
@@ -384,8 +385,8 @@ void AskQuestions()
         cout << endl;		//give space between the questions
         
         //question and answer
-        cout << ("   			---stretcher, Reeves, Backboard Ambulance---");
-        cout << ("- Where was the patient transferred too: ");
+        cout << "   			---stretcher, Reeves, Backboard Ambulance---\n";
+        cout << "- Where was the patient transferred too: ";
             cin >> strInput;
         
         //set it in the question database
@@ -404,8 +405,8 @@ void AskQuestions()
         cout << endl;		//give space between questions
         
         //question and answer
-        cout << ("    	 ---Sheet slide, walking, stand pivot, carry, slide, etc---");
-        cout << ("- How was the Patient transferred to the location previously stated: ");
+        cout << "    	 ---Sheet slide, walking, stand pivot, carry, slide, etc---\n";
+        cout << "- How was the Patient transferred to the location previously stated: ";
         cin >> strInput;
         
         //set it in the question database
@@ -424,8 +425,8 @@ void AskQuestions()
         cout << endl;		//give space between questions
         
         //question and answer
-        cout << ("   ---Backboard, stretcher, driver seat, bench seat, captins chair, car seat---");
-        cout << ("- What was the patient secured to: ");
+        cout << "   ---Backboard, stretcher, driver seat, bench seat, captins chair, car seat---\n";
+        cout << "- What was the patient secured to: ";
             cin >> strInput;
         
         //set it in the question database
@@ -444,7 +445,7 @@ void AskQuestions()
         cout << endl;		//give space between the questions
         
         //question and answer
-        cout << ("- Was PTS vitals taken (y)es or (n)o: ");
+        cout << "- Was PTS vitals taken (y)es or (n)o: ";
         cin >> strInput;
         
         if(strInput == "y" || strInput == "Y")
@@ -462,8 +463,8 @@ void AskQuestions()
             cout << endl;		//give space between the questions
             
             //question and answer
-            cout << ("    	 ---ALS, combative, refusal(start with becuase)---");
-            cout << ("- explain why: ");
+            cout << "    	 ---ALS, combative, refusal(start with becuase)---\n";
+            cout << "- explain why: ";
             cin >> strInput;
             
             //set it in the question database
@@ -484,8 +485,8 @@ void AskQuestions()
         cout << endl;		//give space between the questions
         
         //question and answer
-        cout << ("   		 ---Better, worse, same and why if known---");
-        cout << ("- note PT condition in Ambulance: ");
+        cout << "   		 ---Better, worse, same and why if known---\n";
+        cout << "- note PT condition in Ambulance: ";
         cin >> strInput;
         
         //set it in the question database
@@ -504,8 +505,8 @@ void AskQuestions()
         cout << endl;		//give space between the questions
         
         //question and answer
-        cout << ("   		 ---stretcher, walked, wheel chair ETC---");
-        cout << ("- note how the PT was brought inside the ER from the Ambulace: ");
+        cout << "   		 ---stretcher, walked, wheel chair ETC---\n";
+        cout << "- note how the PT was brought inside the ER from the Ambulace: ";
         cin >> strInput;
         
         //set it in the question database
@@ -524,8 +525,8 @@ void AskQuestions()
         cout << endl;		//give space between the questions
         
         //question and answer
-        cout << ("- note the department, secition, area the PT was brought once inside");
-        cout << ("  the ER: ");
+        cout << "- note the department, secition, area the PT was brought once inside";
+        cout << "  the ER: ";
         cin >> strInput;
         
         //set it in the question database
@@ -544,8 +545,8 @@ void AskQuestions()
         cout << endl;		//give space between the questions
         
         //question and answer
-        cout << ("     		  ---Slide, Lift, Walked--");
-        cout << ("- note how the PT was moved to the bed in the ER: ");
+        cout << "     		  ---Slide, Lift, Walked--";
+        cout << "- note how the PT was moved to the bed in the ER: ";
         cin >> strInput;
         
         //set it in the question database
@@ -566,16 +567,16 @@ void AskQuestions()
     while(true)
     {
         cout << endl;
-        cout << ("(e) enter to contine: ");
+        cout << "(e) enter to contine: ";
         
         if(chooser == "e")
         {
-            
+            EssayFormat essay;
         }
         
         else
         {
-            cout << ("   ---THATS NOT E!!!---");
+            cout << "   ---THATS NOT E!!!---\n";
             cout << endl;
         }
     }
