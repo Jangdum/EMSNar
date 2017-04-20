@@ -8,6 +8,7 @@
 
 #include "EssayFormat.hpp"
 #include "VariableDataBase.hpp"
+#include "Questions.hpp">
 #include <iostream>
 
 using namespace std;

@@ -10,6 +10,7 @@
 #include "VariableDataBase.hpp"
 #include "EssayFormat.hpp"
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
@@ -66,6 +67,8 @@ void QuestionStuff()
         else
         {
             cout << "Enter 1 or 2\n\n";
+            
+            true;
         }
     }
 }
@@ -79,7 +82,11 @@ void AskQuestions()
 {
     //Local Variables
     string strInput;
+    string strInput2;
+    char str[200];
     int intInput;
+    
+    system("CLS");
     
     //set the first has answered to true to access the first
     //question
@@ -102,12 +109,14 @@ void AskQuestions()
     
     if(hasAnswered[1] == true)
     {
+    	system("CLS");
         //question and answer
         cout << "- What kind of location is it: ";
             cin >> strInput;
         
         //set it in the question database
         varDaBase.SetLocation(strInput);
+        
         
         //set to false to not go back and set the
         //next one to be true
@@ -117,9 +126,11 @@ void AskQuestions()
     
     if(hasAnswered[3] == true)
     {
+    	system("CLS");
         //question and answer
         cout << "- What kind of call was it dispached as: ";
-            cin >> strInput;
+        	cin.getline(str, 200);
+        	getline(cin, strInput);
         
         //set it in the question database
         varDaBase.SetTypeCall(strInput);
@@ -134,6 +145,8 @@ void AskQuestions()
     
     if(hasAnswered[3] == true)
     {
+    	system("CLS");
+    	
         while(true)
         {
             //question and answer
@@ -200,11 +213,14 @@ void AskQuestions()
     
     if(hasAnswered[4] == true)
     {
+        system("CLS");
         
         //question and answer
         cout << "         		---Note Position / Type of room---\n";
         cout << "- Where was the patient found within the location: ";
-            cin >> strInput;
+          	cin.getline(str, 200);
+        	getline(cin, strInput);
+          	
         
         //set it in the question database
         varDaBase.SetLocationOfPatiant(strInput);
@@ -217,12 +233,13 @@ void AskQuestions()
     
     if(hasAnswered[5] == true)
     {
-        cout << endl;		//give a space between the questions
+      	system("CLS");
         
         //question and answer
         cout << "          		 ---ex. AMS, Crying, unconscious---\n";
         cout << "- What was the patient status when you got there: ";
-            cin >> strInput;
+            cin.getline(str, 200);
+        	getline(cin, strInput);
         
         //set it in the question database
         varDaBase.SetPatiantStatus(strInput);
@@ -237,9 +254,12 @@ void AskQuestions()
     
     if(hasAnswered[6] == true)
     {
+    	system("CLS");
+    	
         //question and answer
         cout << "- What was the patient mental staus: ";
-            cin >> strInput;
+            cin.getline(str, 200);
+        	getline(cin, strInput);
         
         //set it in the question database
         varDaBase.SetPatiantMentalState(strInput);
@@ -254,10 +274,13 @@ void AskQuestions()
     
     if(hasAnswered[7] == true)
     {
+    	system("CLS");
+    	
         //question and answer
         cout << "- What does the patient say is wrong with them?";
         cout << "  Any pertinent negatives?: ";
-            cin >> strInput;
+            cin.getline(str, 200);
+        	getline(cin, strInput);
         
         //set it in the question database
         varDaBase.SetPatiantClame(strInput);
@@ -272,11 +295,13 @@ void AskQuestions()
     
     if(hasAnswered[8] == true)
     {
+    	system("CLS");
+    	
         while(true)
         {
             //question and answer
             cout << "- Was Oxygen Used (y)es or (n)o: ";
-            cin >> strInput;
+            	cin >> strInput;
             
             if(strInput == "y" || strInput == "Y")
             {
@@ -307,13 +332,14 @@ void AskQuestions()
                 
                 if(inerAnswered[1] == true)
                 {
-                    cout << endl;		//give space between the questions
+                	system("CLS");
                     
                     while(true)
                     {
                         //question and answer
                         cout << "- Was PT Transferred to the room air: (y)es or (n)o: ";
-                        cin >> strInput;
+                        	cin.getline(str, 200);
+        					getline(cin, strInput);
                         
                         //if you answer yes to the question
                         if(strInput == "y" || strInput == "Y")
@@ -382,12 +408,13 @@ void AskQuestions()
     
     if(hasAnswered[9] == true)
     {
-        cout << endl;		//give space between the questions
+        system("CLS");
         
         //question and answer
         cout << "   			---stretcher, Reeves, Backboard Ambulance---\n";
         cout << "- Where was the patient transferred too: ";
-            cin >> strInput;
+            cin.getline(str, 200);
+        	getline(cin, strInput);
         
         //set it in the question database
         varDaBase.SetPatientTransfer(strInput);
@@ -402,12 +429,13 @@ void AskQuestions()
     
     if(hasAnswered[10] == true)
     {
-        cout << endl;		//give space between questions
+        system("CLS");
         
         //question and answer
         cout << "    	 ---Sheet slide, walking, stand pivot, carry, slide, etc---\n";
         cout << "- How was the Patient transferred to the location previously stated: ";
-        cin >> strInput;
+        	cin.getline(str, 200);
+        	getline(cin, strInput);
         
         //set it in the question database
         varDaBase.SetExplinPatientTransfer(strInput);
@@ -422,12 +450,13 @@ void AskQuestions()
     
     if(hasAnswered[11] == true)
     {
-        cout << endl;		//give space between questions
+        system("CLS");
         
         //question and answer
         cout << "   ---Backboard, stretcher, driver seat, bench seat, captins chair, car seat---\n";
         cout << "- What was the patient secured to: ";
-            cin >> strInput;
+            cin.getline(str, 200);
+        	getline(cin, strInput);
         
         //set it in the question database
         varDaBase.SetPatientSecure(strInput);
@@ -442,11 +471,11 @@ void AskQuestions()
     
     if(hasAnswered[12] == true)
     {
-        cout << endl;		//give space between the questions
+        system("CLS");
         
         //question and answer
         cout << "- Was PTS vitals taken (y)es or (n)o: ";
-        cin >> strInput;
+        	cin >> strInput;
         
         if(strInput == "y" || strInput == "Y")
         {
@@ -465,7 +494,8 @@ void AskQuestions()
             //question and answer
             cout << "    	 ---ALS, combative, refusal(start with becuase)---\n";
             cout << "- explain why: ";
-            cin >> strInput;
+            	cin.getline(str, 200);
+        		getline(cin, strInput);
             
             //set it in the question database
             varDaBase.SetPTVitalExplentation(strInput);
@@ -482,12 +512,13 @@ void AskQuestions()
     
     if(hasAnswered[13] == true)
     {
-        cout << endl;		//give space between the questions
+        system("CLS");
         
         //question and answer
         cout << "   		 ---Better, worse, same and why if known---\n";
         cout << "- note PT condition in Ambulance: ";
-        cin >> strInput;
+       		cin.getline(str, 200);
+        	getline(cin, strInput);
         
         //set it in the question database
         varDaBase.SetConditionInAmbulance(strInput);
@@ -502,12 +533,12 @@ void AskQuestions()
     
     if(hasAnswered[14] == true)
     {
-        cout << endl;		//give space between the questions
+        system("CLS");
         
         //question and answer
         cout << "   		 ---stretcher, walked, wheel chair ETC---\n";
         cout << "- note how the PT was brought inside the ER from the Ambulace: ";
-        cin >> strInput;
+        	cin >> strInput;
         
         //set it in the question database
         varDaBase.SetHowPTGotInToER(strInput);
@@ -522,12 +553,12 @@ void AskQuestions()
     
     if(hasAnswered[15] == true)
     {
-        cout << endl;		//give space between the questions
+        system("CLS");
         
         //question and answer
         cout << "- note the department, secition, area the PT was brought once inside";
         cout << "  the ER: ";
-        cin >> strInput;
+        	cin >> strInput;
         
         //set it in the question database
         varDaBase.SetERArea(strInput);
@@ -542,12 +573,12 @@ void AskQuestions()
     
     if(hasAnswered[16] == true)
     {
-        cout << endl;		//give space between the questions
+       system("CLS");
         
         //question and answer
-        cout << "     		  ---Slide, Lift, Walked--";
+        cout << "     		  ---Slide, Lift, Walked--\n";
         cout << "- note how the PT was moved to the bed in the ER: ";
-        cin >> strInput;
+        	cin >> strInput;
         
         //set it in the question database
         varDaBase.SetPTMovedToBedER(strInput);
@@ -566,18 +597,21 @@ void AskQuestions()
     
     while(true)
     {
+    	system("CLS");
         cout << endl;
         cout << "(e) enter to contine: ";
+        	cin >> chooser;
         
         if(chooser == "e")
         {
             EssayFormat essay;
+            
+            break;
         }
         
         else
         {
             cout << "   ---THATS NOT E!!!---\n";
-            cout << endl;
         }
     }
 }
