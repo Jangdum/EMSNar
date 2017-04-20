@@ -327,10 +327,10 @@ private:
     string PTMoveToBed;
     
     //BOOLS
-    bool ALSCalled = false;
-    bool oxygenUsed = false;
-    bool PTSVitals = false;
-    bool transferAir = false;
+    bool ALSCalled;
+    bool oxygenUsed;
+    bool PTSVitals;
+    bool transferAir;
 };
 
 #endif /* VariableDataBase_hpp */
