@@ -8,7 +8,6 @@
 
 #include "Questions.hpp"
 #include "VariableDataBase.hpp"
-#include "EssayFormat.hpp"
 #include <iostream>
 #include <iomanip>
 
@@ -16,6 +15,7 @@ using namespace std;
 
 void QuestionStuff();
 void AskQuestions();
+void Essay();
 
 string chooser;
 bool hasAnswered[20];
@@ -205,6 +205,8 @@ void AskQuestions()
             else
             {
                 cout << "   ---Not a (y) or a (n)---\n\n";
+                
+                true;
             }
         }
     }
@@ -604,7 +606,7 @@ void AskQuestions()
         
         if(chooser == "e")
         {
-            EssayFormat essay;
+           	Essay();
             
             break;
         }
@@ -614,4 +616,171 @@ void AskQuestions()
             cout << "   ---THATS NOT E!!!---\n";
         }
     }
+}
+
+void Essay()
+{
+    cout << "Essay:";
+    cout << endl;
+    
+    cout << "EMS " << varDaBase.GetEMSUnit() << " called to a " << varDaBase.GetLocation();
+    cout << ", on a " << varDaBase.GetTypeCall() << endl;
+    
+    if(varDaBase.GetALSCall() == true)
+    {
+        cout << ". ALS " << varDaBase.GetALSNumber() << " was called";
+    }
+    else
+    {
+        cout << ". ALS was not called ";
+    }
+    cout << endl;
+    cout << "upon arrival at the scene, pt was found " << varDaBase.GetLocationOfPatiant() << ".";
+    cout << " PTS status on arrival was " << varDaBase.GetPatiantStatus() <<
+                       " PTS mental status was ";
+    cout << varDaBase.GetPatiantMentalState() << ". PTS reports that they are ";
+    cout << varDaBase.GetPatiantClame() << ". PTS vitals were taken";
+    cout << endl;
+    
+    if(varDaBase.GetOxygenUsed() == true)
+    {
+        cout << "and were recorded in the chart PT was on Oxygen, ";
+        cout << "At " << varDaBase.GetAmountOfOxygen() << " Liters a minute.";
+        cout << endl;
+    }
+    else
+    {
+        cout << "and were recorded in the chart PT was not on Oxygen. ";
+    }
+    
+    cout << "Pt was transferred to the " << varDaBase.GetPatientTransfer();
+    cout << " by way of " << varDaBase.GetExplinPatientTransfer();
+    cout << ". Pt was secured to the " << varDaBase.GetPatientSecure();
+    cout << "Using all straps necessary. Pt vitals ";
+    
+    if(varDaBase.GetPTSVitals() == true)
+    {
+        cout << "was ";
+    }
+    else
+    {
+        cout << "were not taken, ";
+        cout << "and released in route to the Hospital ";
+        cout << endl;
+        cout << varDaBase.GetVitalExplentation();
+    }
+    
+    cout << endl;
+    cout << "Pt condition in the ambulance was ";
+    cout << varDaBase.GetPTConditionAmb();
+    
+    cout << ". PT was brought into the ER by " << varDaBase.GetHowPTGotInToER() << ".";
+    cout << endl;
+    cout << " Pt care was transferred to the nurse in the " << varDaBase.GetERArea();
+    cout << " section of the ER.";
+    
+    cout << endl;
+    cout << "pt was " << varDaBase.GetPatientSecure();
+    cout << " to the gurney and left in nurses care after a signature was obtained.";
+    
+    cout << endl;
+    cout << "Pt oxygen was ";
+    
+    if(varDaBase.GetTransferAir() == true)
+    {
+        cout << " transferred. ";
+    }
+    else if(varDaBase.GetTransferAir() == false)
+    {
+        cout << " not used. ";
+    }
+    
+    cout << "EMS " << varDaBase.GetEMSUnit();
+    cout << " clear the following receipt of a face sheet from the ";
+    cout << varDaBase.GetERArea() << ".";
+    
+    
+    for(int i = 0; i <= 5; i++)
+    {
+        cout << endl;
+    }
+    
+    cout << "Bullet Point: ";
+    cout << endl;
+    
+    cout << "\n\u2022 EMS Unit " << varDaBase.GetEMSUnit();
+    cout << "\n\u2022 Type of call was " << varDaBase.GetTypeCall();
+    cout << "\n\u2022 Called to " << varDaBase.GetLocation();
+    cout << "\n\u2022 PTS status on arrival " << varDaBase.GetPatiantStatus();
+    cout << "\n\u2022 Mental Status was" << varDaBase.GetPatiantMentalState();
+    
+    if(varDaBase.GetALSCall() == true)
+    {
+        cout << "\n\u2022 ALS was called";
+        cout << "\n\u2022 ALS number " << varDaBase.GetALSNumber();
+    }
+    else if(varDaBase.GetALSCall() == false)
+    {
+        cout << "\n\u2022 ALS was not called";
+    }
+    
+    cout << "\n\u2022 PT was found " << varDaBase.GetLocationOfPatiant();
+    cout << "\n\u2022 PT Status " << varDaBase.GetPatiantStatus();
+    
+    if(varDaBase.GetPTSVitals() == true)
+    {
+        cout << "\n\u2022 PT vitals were taken";
+    }
+    else if(varDaBase.GetPTSVitals() == false)
+    {
+        cout << "\n\u2022 were not taken";
+    }
+    
+    if(varDaBase.GetOxygenUsed() == true)
+    {
+        cout << "\n\u2022 Oxygen was used";
+        cout << "\n\u2022 Oxygen was at " << varDaBase.GetAmountOfOxygen();
+    }
+    else if(varDaBase.GetOxygenUsed() == false)
+    {
+        cout << "\n\u2022 Oxygen was not used";
+    }
+    
+    cout << "\n\u2022 Pt was transferred to " << varDaBase.GetPatientTransfer();
+    cout << "\n\u2022 by way of " << varDaBase.GetExplinPatientTransfer();
+    cout << "\n\u2022 Pt Secured by " << varDaBase.GetPatientSecure();
+    
+    if(varDaBase.GetPTSVitals() == true)
+    {
+        cout << "\n\u2022 Vitals were taken";
+    }
+    else if(varDaBase.GetPTSVitals() == false)
+    {
+        cout << "\n\u2022 Vitals were not taken";
+        cout << "\n\u2022 becuase" << varDaBase.GetVitalExplentation();
+    }
+    
+    cout << "\n\u2022 Condition in the Ambulance " << varDaBase.GetPTConditionAmb();
+    cout << "\n\u2022 brought into ER by " << varDaBase.GetHowPTGotInToER();
+    cout << "\n\u2022 transferred to the nuse in the " << varDaBase.GetERArea();
+    cout << "\n\u2022 Pt was secure to the gurny by " << varDaBase.GetPatientSecure();
+    
+    if(varDaBase.GetOxygenUsed() == true)
+    {
+        if(varDaBase.GetTransferAir() == true)
+        {
+            cout << "\n\u2022 was transferred";
+        }
+    }
+    
+    else if(varDaBase.GetOxygenUsed() == false)
+    {
+        if(varDaBase.GetTransferAir() == false)
+        {
+            cout << "\n\u2022 was not transftered";
+        }
+    }
+    
+    cout << "\n\u2022 EMS " << varDaBase.GetEMSUnit() << " Clear";
+
 }
