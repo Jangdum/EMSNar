@@ -1,0 +1,37 @@
+# Project: EMS
+# Makefile created by Dev-C++ 5.6.2
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = EMSNar-master/EssayFormat.o EMSNar-master/Example.o EMSNar-master/main.o EMSNar-master/Questions.o
+LINKOBJ  = EMSNar-master/EssayFormat.o EMSNar-master/Example.o EMSNar-master/main.o EMSNar-master/Questions.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.8.1/include/c++"
+BIN      = EMS.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+EMSNar-master/EssayFormat.o: EMSNar-master/EssayFormat.cpp
+	$(CPP) -c EMSNar-master/EssayFormat.cpp -o EMSNar-master/EssayFormat.o $(CXXFLAGS)
+
+EMSNar-master/Example.o: EMSNar-master/Example.cpp
+	$(CPP) -c EMSNar-master/Example.cpp -o EMSNar-master/Example.o $(CXXFLAGS)
+
+EMSNar-master/main.o: EMSNar-master/main.cpp
+	$(CPP) -c EMSNar-master/main.cpp -o EMSNar-master/main.o $(CXXFLAGS)
+
+EMSNar-master/Questions.o: EMSNar-master/Questions.cpp
+	$(CPP) -c EMSNar-master/Questions.cpp -o EMSNar-master/Questions.o $(CXXFLAGS)
