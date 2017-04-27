@@ -8,6 +8,7 @@
 
 #include "Questions.hpp"
 #include "VariableDataBase.hpp"
+#include "Example.hpp"
 #include <iostream>
 #include <iomanip>
 
@@ -43,6 +44,7 @@ void QuestionStuff()
     {
         cout << "Example (1)\n";
         cout << "Narritave (2)\n";
+        cout << "Help (3)\n";
         cout << "> ";
             cin >> intInput;
         
@@ -50,7 +52,7 @@ void QuestionStuff()
         if(intInput == 1)
         {
                     
-            //Put Example class here
+            Example exam;
             break;		//get out of the loop
         }
                 
@@ -61,12 +63,26 @@ void QuestionStuff()
                     
             break;		//get out of the loop
         }
+        
+        //help with the questions presented 
+        else if(intInput == 3)
+        {
+        	cout << "Example:\n";
+        	cout << "This will present an example essay and acceptable answers\n\n";
+        	
+        	cout << "Narritve:\n";
+        	cout << "This will ask a series of questions and will create the narritive\n\n";
+        	
+        	system("pause");
+        	
+        	system("CLS");
+        }
                 
         //if the person does not input the specified numbers
         //loop back and say this
         else
         {
-            cout << "Enter 1 or 2\n\n";
+            cout << "Enter 1, 2, or 3\n\n";
             
             true;
         }
