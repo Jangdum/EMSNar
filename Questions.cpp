@@ -257,10 +257,9 @@ void AskQuestions()
         cout << "          		 ---ex. AMS, Crying, unconscious---\n";
         cout << "- What was the patient status when you got there: ";
             cin.getline(str, 200);
-        	getline(cin, strInput);
         
         //set it in the question database
-        varDaBase.SetPatiantStatus(strInput);
+        varDaBase.SetPatiantStatus(str);
         
         //set to false to not go back and set the
         //next one to be true
@@ -277,10 +276,9 @@ void AskQuestions()
         //question and answer
         cout << "- What was the patient mental staus: ";
             cin.getline(str, 200);
-        	getline(cin, strInput);
         
         //set it in the question database
-        varDaBase.SetPatiantMentalState(strInput);
+        varDaBase.SetPatiantMentalState(str);
         
         //set to false to not go back and set the
         //next one to be true
@@ -298,10 +296,9 @@ void AskQuestions()
         cout << "- What does the patient say is wrong with them?";
         cout << "  Any pertinent negatives?: ";
             cin.getline(str, 200);
-        	getline(cin, strInput);
         
         //set it in the question database
-        varDaBase.SetPatiantClame(strInput);
+        varDaBase.SetPatiantClame(str);
         
         //set to false to not go back and set the
         //next one to be true
@@ -356,7 +353,6 @@ void AskQuestions()
                     {
                         //question and answer
                         cout << "- Was PT Transferred to the room air: (y)es or (n)o: ";
-                        	cin.getline(str, 200);
         					getline(cin, strInput);
                         
                         //if you answer yes to the question
@@ -432,10 +428,9 @@ void AskQuestions()
         cout << "   			---stretcher, Reeves, Backboard Ambulance---\n";
         cout << "- Where was the patient transferred too: ";
             cin.getline(str, 200);
-        	getline(cin, strInput);
         
         //set it in the question database
-        varDaBase.SetPatientTransfer(strInput);
+        varDaBase.SetPatientTransfer(str);
         
         //set to false to not go back and set the
         //next one to be true
@@ -453,10 +448,9 @@ void AskQuestions()
         cout << "    	 ---Sheet slide, walking, stand pivot, carry, slide, etc---\n";
         cout << "- How was the Patient transferred to the location previously stated: ";
         	cin.getline(str, 200);
-        	getline(cin, strInput);
         
         //set it in the question database
-        varDaBase.SetExplinPatientTransfer(strInput);
+        varDaBase.SetExplinPatientTransfer(str);
         
         //set to false to not go back and set the
         //next one to be true
@@ -474,10 +468,9 @@ void AskQuestions()
         cout << "   ---Backboard, stretcher, driver seat, bench seat, captins chair, car seat---\n";
         cout << "- What was the patient secured to: ";
             cin.getline(str, 200);
-        	getline(cin, strInput);
         
         //set it in the question database
-        varDaBase.SetPatientSecure(strInput);
+        varDaBase.SetPatientSecure(str);
         
         //set to false to not go back and set the
         //next one to be true
@@ -536,10 +529,9 @@ void AskQuestions()
         cout << "   		 ---Better, worse, same and why if known---\n";
         cout << "- note PT condition in Ambulance: ";
        		cin.getline(str, 200);
-        	getline(cin, strInput);
         
         //set it in the question database
-        varDaBase.SetConditionInAmbulance(strInput);
+        varDaBase.SetConditionInAmbulance(str);
         
         //set to false to not go back and set the
         //next one to be true

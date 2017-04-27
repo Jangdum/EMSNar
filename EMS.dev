@@ -51,7 +51,7 @@ AutoIncBuildNr=0
 SyncProduct=1
 
 [Unit1]
-FileName=EMSNar-master\EssayFormat.cpp
+FileName=Example.cpp
 CompileCpp=1
 Folder=EMS
 Compile=1
@@ -61,7 +61,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit2]
-FileName=EMSNar-master\EssayFormat.hpp
+FileName=Example.hpp
 CompileCpp=1
 Folder=EMS
 Compile=1
@@ -71,7 +71,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit3]
-FileName=EMSNar-master\Example.cpp
+FileName=main.cpp
 CompileCpp=1
 Folder=EMS
 Compile=1
@@ -81,7 +81,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit4]
-FileName=EMSNar-master\Example.hpp
+FileName=Questions.cpp
 CompileCpp=1
 Folder=EMS
 Compile=1
@@ -91,7 +91,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit5]
-FileName=EMSNar-master\main.cpp
+FileName=Questions.hpp
 CompileCpp=1
 Folder=EMS
 Compile=1
@@ -101,7 +101,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit6]
-FileName=EMSNar-master\Questions.cpp
+FileName=test.cpp
 CompileCpp=1
 Folder=EMS
 Compile=1
@@ -111,7 +111,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit7]
-FileName=EMSNar-master\Questions.hpp
+FileName=test.h
 CompileCpp=1
 Folder=EMS
 Compile=1
@@ -121,7 +121,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit8]
-FileName=EMSNar-master\VariableDataBase.hpp
+FileName=VariableDataBase.hpp
 CompileCpp=1
 Folder=EMS
 Compile=1
